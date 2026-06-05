@@ -183,6 +183,20 @@ The minimum useful set should be added before meaningful AI coding work begins.
 14. General protocol updates must not be mixed with project feature work.
 15. Project-specific rules must stay short and operational.
 
+## Project Handoff Checklist
+
+Every new chat or project handoff must explicitly include the following details:
+
+* **Repository URL**: The source control link for the project.
+* **Last confirmed commit**: The latest validated commit hash.
+* **Active ticket**: The current ticket identifier or reference.
+* **Current executor/tool**: The editor or agent system executing the work (e.g., Antigravity, Codex, Claude Code, Cursor, local terminal, or `unknown` if not determined).
+* **Intended implementation model class**: The reasoning tier target for changes (e.g., Sonnet-class, Flash/Lite-class).
+* **Required review model/class**: The model class required for verification or secondary review (e.g., Opus-class).
+* **Scope**: Explicit list of files and components to be modified.
+* **Non-scope**: Explicit list of files and components that must not be touched.
+* **Done-Log status**: Status of the verification done-log checklist.
+
 ## Tool Adoption Filter
 
 Every new AI tool, plugin, MCP server, RAG system, subagent setup or automation idea must be classified before use.

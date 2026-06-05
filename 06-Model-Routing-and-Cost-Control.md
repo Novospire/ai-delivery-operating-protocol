@@ -50,3 +50,23 @@ Model lineups and names change over time. Treat the following as current example
 
 * Model names, performance characteristics, and pricing structures change frequently.
 * Revisit model classifications and pricing periodically (e.g., quarterly) to ensure our routing tiers align with the most cost-effective and capable models on the market.
+
+## 7. Model Class vs Executor Tool
+
+Model class and executor tool are separate routing decisions. They should never be conflated.
+
+* **Model Class**: Defines the intelligence tier and reasoning capabilities (e.g., Opus-class, Sonnet-class, Gemini Flash/Lite-class).
+* **Executor/Tool**: Defines the environment, agent system, or interface executing the commands and file edits (e.g., Antigravity, Codex, Claude Code, Cursor, GitHub Web UI, local terminal).
+
+### Operating Rules
+
+* **No Substitutions**: Never substitute one executor name for another in handoff prompts.
+  * *Example*: If the project is currently being implemented in **Antigravity**, prompts and context files must explicitly say **Antigravity**, not Codex or Claude Code.
+* **Explicit Unknowns**: If the current executor/tool is unknown, ask for clarification or mark it explicitly as `unknown`. Do not guess.
+
+> [!IMPORTANT]
+> Every implementation handoff must explicitly state the execution context. Include the following details in the handoff prompt:
+> * **Current Executor/Tool**: (e.g., Antigravity)
+> * **Intended Model Class**: (e.g., Sonnet-class)
+> * **Review Model/Class**: (e.g., Opus-class)
+> * **Cross-Model Review Required**: (Yes/No)
