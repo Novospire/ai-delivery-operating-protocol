@@ -222,6 +222,7 @@ Create and maintain:
 - 03-Project-Adapter-Template.md
 - 04-Decision-Matrix.md
 - 05-Templates-Pack.md
+- 06-Model-Routing-and-Cost-Control.md
 
 ### Phase 1 — Apply to Maretech
 

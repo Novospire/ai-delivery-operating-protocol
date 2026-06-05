@@ -49,6 +49,7 @@ A decision is accepted only if it makes delivery safer, faster, clearer or more 
 | Karpathy-style rules         | Keep clarity, minimal edits, surgical changes                           |        ACCEPT_PARTIAL | All projects              | Do not blindly copy full repo              |
 | Plugin hunting               | Do not install plugins without clear benefit                            |        REJECT_FOR_NOW | All projects              | One tool, one project, one pilot           |
 | Gemini capacity              | Do not assume unlimited quota                                           |    NEEDS_VERIFICATION | Gemini workflows          | Verify account/limits first                |
+| Model routing / cost control | Choose model by task risk; do not waste expensive tokens                |            ACCEPT_NOW | All projects              | Model choice should be risk-based          |
 
 ## Project-Specific Risk Areas
 
